@@ -364,12 +364,3 @@ for name, eps, root, n_iter, scipy_idx, scipy_eps in rows:
     scipy_x = scipy_vals[scipy_eps][scipy_idx]
 
     print(f"{name:<18} {eps:>5} {root:>14.10f} {n_iter:>6} {nevyazka:>11.3e} {scipy_x:>14.10f}")
-
-print()
-print("SciPy:")
-print(f"  bisect      e=1e-3:  {root_scipy_bisect_1:.10f}")
-print(f"  bisect      e=1e-5:  {root_scipy_bisect_2:.10f}")
-print(f"  newton      e=1e-3:  {root_scipy_newton_1:.10f}")
-print(f"  newton      e=1e-5:  {root_scipy_newton_2:.10f}")
-print(f"  root_scalar e=1e-3:  {res_scipy_root_1.root:.10f}")
-print(f"  root_scalar e=1e-5:  {res_scipy_root_2.root:.10f}")
